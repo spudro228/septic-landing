@@ -1,6 +1,25 @@
-@import "../node_modules/bootstrap/scss/bootstrap-reboot";
-@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/bootstrap";
+//@import "../node_modules/bootstrap/scss/grid";
 
-.hello{
-  font-size: 3rem;
+.hello {
+  font-size: 2rem;
 }
+
+.header {
+  background-color: #6c757d;
+  height: 20rem;
+  max-height: 20rem;
+
+  color: $white;
+}
+
+//@media (min-width: 62em) {
+//  .company-name {
+//    font-size: 5.6rem;
+//  }
+//}
+//@media (min-width: 48em) {
+//  .company-name {
+//    font-size: 3.6rem;
+//  }
+//}
