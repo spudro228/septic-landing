@@ -1,0 +1,53 @@
+@import "normalize";
+
+$footer-height: 200px;
+
+$break-xsmall: 576px;
+$break-small: 768px;
+$break-large: 1200px;
+$break-medium: 992px;
+
+html, body {
+  height: 100%
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  background: #F5F7FA;
+  font: 14px/20px Arial, sans-serif;
+
+  &-menu {
+    flex: 0 1 auto;
+    width: 100%;
+    min-height: 75px;
+    background-color: #f5f7fa;
+  }
+
+  &-body {
+    flex: 1 0 auto;
+    background-color: #ffeae4;
+    width: 100%;
+  }
+
+  &-footer {
+    flex: none;
+    height: 100px;
+    background-color: #9fcdff;
+
+  }
+
+  .some-text {
+    width: $break-medium;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fecdff;
+    @media screen and (max-width: $break-medium) {
+      width: auto;
+    }
+  }
+}
+
