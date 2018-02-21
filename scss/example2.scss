@@ -23,7 +23,6 @@ html, body {
   &-menu {
     flex: 0 1 auto;
     width: 100%;
-    min-height: 75px;
     background-color: #f5f7fa;
   }
 
@@ -47,6 +46,38 @@ html, body {
     background-color: #fecdff;
     @media screen and (max-width: $break-medium) {
       width: auto;
+    }
+  }
+  .container-menu {
+    height: auto;
+
+    .wrap-icons {
+      height: auto;
+      max-width: $break-medium;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      //justify-items: center;
+      margin: 0 auto;
+    }
+    .icon {
+      background-color: #1b1e21;
+      min-width: 200px;
+      height: 75px;
+      margin: auto 0;
+
+    }
+    .phone {
+      display: flex;
+      //word-wrap: break-word;
+      min-width: 200px;
+      min-height: 75px;
+      .number {
+        width: 100%;
+        margin: auto;
+        font-size: 20pt;
+
+      }
     }
   }
 }
