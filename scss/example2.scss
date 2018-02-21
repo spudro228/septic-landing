@@ -28,7 +28,7 @@ html, body {
 
   &-body {
     flex: 1 0 auto;
-    background-color: #ffeae4;
+    background-color: #ffffff;
     width: 100%;
   }
 
@@ -43,13 +43,18 @@ html, body {
     width: $break-medium;
     height: 100%;
     margin: 0 auto;
-    background-color: #fecdff;
+    background-color: rgba(108, 117, 125, 0.03);
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
     @media screen and (max-width: $break-medium) {
       width: auto;
     }
   }
   .container-menu {
     height: auto;
+    background-color: #08AEEA;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
 
     .wrap-icons {
       height: auto;
@@ -57,26 +62,72 @@ html, body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      //justify-items: center;
       margin: 0 auto;
-    }
-    .icon {
-      background-color: #1b1e21;
-      min-width: 200px;
-      height: 75px;
-      margin: auto 0;
 
-    }
-    .phone {
-      display: flex;
-      //word-wrap: break-word;
-      min-width: 200px;
-      min-height: 75px;
-      .number {
-        width: 100%;
-        margin: auto;
-        font-size: 20pt;
+      .icon {
+        //background-color: #1b1e21;
+        display: flex;
 
+        min-width: 300px;
+        height: 75px;
+        margin: auto 0;
+        &__text {
+          width: 100%;
+          margin: auto;
+
+          font-family: Roboto Condensed;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          font-size: 36px;
+          text-align: center;
+          text-decoration-line: underline;
+          text-transform: uppercase;
+
+          color: #000000;
+
+          &__red {
+            color: #EB5757;
+          }
+        }
+      }
+      .phone {
+        display: flex;
+        //word-wrap: break-word;
+        min-width: 200px;
+        min-height: 75px;
+        &__text {
+          width: 100%;
+          margin: auto;
+
+          font-family: Roboto Mono;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          font-size: 18px;
+          text-align: center;
+          text-decoration-line: underline;
+          text-transform: capitalize;
+
+          color: #000000;
+
+        }
+        @media (max-width: $break-small) {
+          min-height: 45px;
+        }
+      }
+      .email {
+        display: flex;
+        min-width: 200px;
+        min-height: 75px;
+        &__text {
+          width: 100%;
+          margin: auto;
+          font-size: 16pt;
+        }
+        @media (max-width: $break-medium) {
+          display: none;
+        }
       }
     }
   }
