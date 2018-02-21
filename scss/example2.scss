@@ -7,6 +7,19 @@ $break-small: 768px;
 $break-large: 1200px;
 $break-medium: 992px;
 
+@mixin info-text {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
 html, body {
   height: 100%
 }
@@ -74,7 +87,6 @@ html, body {
         &__text {
           width: 100%;
           margin: auto;
-
           font-family: Roboto Condensed;
           font-style: normal;
           font-weight: 300;
@@ -83,7 +95,6 @@ html, body {
           text-align: center;
           text-decoration-line: underline;
           text-transform: uppercase;
-
           color: #000000;
 
           &__red {
@@ -100,16 +111,7 @@ html, body {
           width: 100%;
           margin: auto;
 
-          font-family: Roboto Mono;
-          font-style: normal;
-          font-weight: 300;
-          line-height: normal;
-          font-size: 18px;
-          text-align: center;
-          text-decoration-line: underline;
-          text-transform: capitalize;
-
-          color: #000000;
+          @include info-text;
 
         }
         @media (max-width: $break-small) {
@@ -123,7 +125,8 @@ html, body {
         &__text {
           width: 100%;
           margin: auto;
-          font-size: 16pt;
+          @include info-text;
+          text-transform: unset;
         }
         @media (max-width: $break-medium) {
           display: none;
