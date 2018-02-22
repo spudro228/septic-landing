@@ -1,11 +1,6 @@
 @import "normalize";
-
-$footer-height: 200px;
-
-$break-xsmall: 576px;
-$break-small: 768px;
-$break-large: 1200px;
-$break-medium: 992px;
+@import "card";
+@import "sizes";
 
 @mixin info-text {
   font-family: Roboto Mono;
@@ -31,7 +26,6 @@ html, body {
   height: 100%;
   margin: 0 auto;
   background: #F5F7FA;
-  font: 14px/20px Arial, sans-serif;
 
   &-menu {
     flex: 0 1 auto;
@@ -53,6 +47,9 @@ html, body {
   }
 
   .some-text {
+    display: flex;
+    flex-direction: column;
+
     width: $break-medium;
     height: 100%;
     margin: 0 auto;
@@ -60,9 +57,12 @@ html, body {
     font-family: Roboto;
     font-weight: 300;
     font-style: normal;
+    font-size: 18px;
+
     @media screen and (max-width: $break-medium) {
       width: auto;
     }
+
   }
   .container-menu {
     height: auto;

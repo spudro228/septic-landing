@@ -1,0 +1,21 @@
+@import "sizes";
+.card{
+  background-color: #fdfdfe;
+  max-width: 510px;
+  //min-width: $break-small;
+  border: 1px solid rgba(165, 165, 165, 0.28);
+  border-radius: 3px;
+}
+.card-header {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 20px 20px;
+
+}
+.card-body{
+  font-size: 1rem;
+  margin: 20px 30px;
+  li{
+    margin: 10px auto;
+  }
+}
