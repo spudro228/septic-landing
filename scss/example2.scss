@@ -145,14 +145,23 @@ html, body {
     }
   }
   .work-resume {
-    max-width: 515px;
+    max-width: 500%;
     @media (max-width: $break-medium) {
       margin-right: auto;
       margin-left: auto;
     }
   }
   .work-schedule {
-    width: 60%;
+    max-width: 100%;
+    @media (max-width: $break-medium) {
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 515px;
+    }
+  }
+  .work-price {
+    max-width: 100%;
     @media (max-width: $break-medium) {
       margin-top: 10px;
       margin-right: auto;
