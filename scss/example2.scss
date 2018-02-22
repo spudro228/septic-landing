@@ -19,6 +19,19 @@ html, body {
   height: 100%
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: $break-small) {
+    flex-direction: column;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -47,10 +60,7 @@ html, body {
   }
 
   .some-text {
-    display: flex;
-    flex-direction: column;
-
-    width: $break-medium;
+    width: $break-large;
     height: 100%;
     margin: 0 auto;
     background-color: rgba(108, 117, 125, 0.03);
@@ -132,6 +142,22 @@ html, body {
           display: none;
         }
       }
+    }
+  }
+  .work-resume {
+    max-width: 515px;
+    @media (max-width: $break-medium) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .work-schedule {
+    width: 60%;
+    @media (max-width: $break-medium) {
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 515px;
     }
   }
 }

@@ -1,25 +1,23 @@
 @import "sizes";
 
 .card {
-  &-resume {
 
-    background-color: #fdfdfe;
-    max-width: 510px;
-    //min-width: $break-small;
-    border: 1px solid rgba(165, 165, 165, 0.28);
-    border-radius: 3px;
-    margin: 20px 10px;
-    @media (max-width: $break-small){
-      margin: 0;
-    }
+  background-color: #fdfdfe;
+  //min-width: $break-small;
+  border: 1px solid rgba(165, 165, 165, 0.28);
+  border-radius: 3px;
+  margin: 20px 10px;
+  height: 100%;
+  @media (max-width: $break-small) {
+    margin: 0;
   }
 }
 
 .card-header {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 300;
-  margin: 20px 20px;
-
+  margin: 25px 20px;
+  text-decoration-line: underline;
 }
 
 .card-body {
@@ -27,5 +25,9 @@
   margin: 20px 30px;
   li {
     margin: 10px auto;
+  }
+
+  &__schedule{
+    margin: 0 20px 20px 20px;
   }
 }
