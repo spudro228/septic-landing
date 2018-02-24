@@ -31,6 +31,9 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+.column-width-50{
+  width: 100%;
+}
 
 .container {
   display: flex;
@@ -55,7 +58,7 @@ html, body {
   &-footer {
     flex: none;
     height: 100px;
-    background-color: #9fcdff;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
 
   }
 
@@ -76,7 +79,6 @@ html, body {
   }
   .container-menu {
     height: auto;
-    background-color: #08AEEA;
     background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
 
     .wrap-icons {
@@ -145,19 +147,21 @@ html, body {
     }
   }
   .work-resume {
-    max-width: 500%;
+    width: 100%;
     @media (max-width: $break-medium) {
+      max-width: 100%;
       margin-right: auto;
       margin-left: auto;
     }
   }
   .work-schedule {
+    //width: 100%;
     max-width: 100%;
     @media (max-width: $break-medium) {
       margin-top: 10px;
       margin-right: auto;
       margin-left: auto;
-      width: 515px;
+      max-width: 100%;
     }
   }
   .work-price {
@@ -166,7 +170,7 @@ html, body {
       margin-top: 10px;
       margin-right: auto;
       margin-left: auto;
-      width: 515px;
+      max-width: 100%;
     }
   }
 }
