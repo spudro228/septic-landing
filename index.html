@@ -7,7 +7,18 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Mono:300,400|Roboto:300,400,500&amp;subset=cyrillic"
           rel="stylesheet">
 <body>
-
+<div class="modal" id="myModal">
+    <div class="modal__content">
+        <form class="back-call-form" action="">
+            <input type="text" placeholder="text">
+            <input type="email" placeholder="email">
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="buttn-wrapper">
+            <button class="close">закрыть</button>
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="container-menu">
         <div class="wrap-icons">
@@ -49,7 +60,7 @@
                                 </div>
 
                                 <div class="buttn-wrapper">
-                                    <button class="order-button">Заказать звонок</button>
+                                    <button id="myBtn" class="order-button">Заказать звонок</button>
                                 </div>
                             </div>
                         </div>
@@ -156,5 +167,32 @@
     </div>
 </div>
 
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
