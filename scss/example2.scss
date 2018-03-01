@@ -241,7 +241,7 @@ html, body {
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
-  .back-call-form{
+  .back-call-form {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -255,17 +255,25 @@ html, body {
     margin: auto;
     //left: 250px;
     top: 25%;
-    padding: 0;
+    padding: 20px;
     border: 1px solid #888;
     width: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+
+    input {
+      margin: 10px auto;
+      //border-style: solid;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid #437ad2;
+      height: 40px;
+    }
   }
 
   .close {
+    margin-top: 10px;
     border-radius: 28px;
     padding: 8px 16px;
     background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
@@ -278,5 +286,19 @@ html, body {
     font-size: 14pt;
     color: #0b2e13;
 
+  }
+  .submit {
+    margin-top: 10px;
+    border-radius: 28px;
+    padding: 8px 16px;
+    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
+    border: 0 none;
+
+    font-family: Roboto;
+    //font-style: normal;
+    font-weight: 500;
+    //line-height: normal;
+    font-size: 14pt;
+    color: #0b2e13;
   }
 }
