@@ -84,10 +84,10 @@ html, body {
 
     .wrap-icons {
       height: auto;
-      max-width: $break-medium;
+      max-width: $break-large;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-between;
       margin: 0 auto;
 
       .icon {
@@ -117,8 +117,8 @@ html, body {
       }
       .phone {
         display: flex;
-        //word-wrap: break-word;
-        min-width: 200px;
+        flex-direction: row;
+        min-width: 450px;
         min-height: 75px;
         &__text {
           width: 100%;
@@ -204,10 +204,23 @@ html, body {
 
   }
 
+  .buttn-wrapper {
+    //margin: 40px;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    //margin-right: 0;
+    //justify-content: flex-end;
+    //margin-bottom: 20px;
+  }
   .order-button {
+    //margin-right: 20px;
+    height: 40px;
+    width: 100%;
     border-radius: 28px;
     padding: 8px 16px;
-    background-image: linear-gradient(45deg, #00A8C5 0%, #FFFF7E 100%);
+    background-color: #2AF598;
+    background-image: linear-gradient(45deg, #2AF598 0%, #08AEEA 43%);
     border: 0 none;
 
     font-family: Roboto;
@@ -222,10 +235,7 @@ html, body {
     &__column {
       //justify-items: center;
     }
-    .buttn-wrapper {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+
   }
 }
 
